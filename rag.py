@@ -9,7 +9,7 @@ from langchain_chroma import Chroma
 import warnings
 warnings.filterwarnings("ignore")
 
-load_dotenv()
+load_dotenv(dotenv_path=Path(__file__).parent/".env")
 
 Chunk_size = 400
 Embedding_model = "sentence-transformers/all-mpnet-base-v2"
